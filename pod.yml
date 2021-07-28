@@ -6,10 +6,10 @@ metadata:
     app: mynginx
 
 spec:
-  container:
+  containers:
     - name: web
       image: nginx
       ports:
         - name: web
           containerPort: 80
-          portocol: TCP
+          
