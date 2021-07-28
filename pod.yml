@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: static-web
+  labels:
+    app: mynginx
+
+spec:
+  container:
+    - name: web
+      image: nginx
+      ports:
+        - name: web
+          containerPort: 80
+          portocol: TCP
