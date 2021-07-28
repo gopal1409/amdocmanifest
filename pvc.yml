@@ -5,10 +5,9 @@ metadata:
   labels:
     type: local
 spec:
-  storageClassName: mysqlstorage
-  capcacity:
-    storage: 10Gi
   accessModes:
     - ReadWriteOnce
-  hostPath:
-    path: "/mnt/data"
+  storageClassName: mysqlstorage
+  resources:
+    requests:
+      storage: 5Gi
