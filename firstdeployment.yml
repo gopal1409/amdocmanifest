@@ -6,14 +6,15 @@ metadata:
     app: nginx
 
 spec:
-  replicas: 3
-  selector:
+  replicas: 3 #it should create three pod
+  selector: #using selector i am managing the three pod
     matchLabels:
-      app: nginx 
-  template:
+      app: nginx #all this pod will have this particular label
+  template: #inside your pod we are going to download image and create container
+  #using template we have define how the container if going be launching inside your pod
     metadata:
       labels:
-        app: nginx 
+        app: nginx #same
     spec:
       containers:
       - name: nginx 
