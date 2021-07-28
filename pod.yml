@@ -1,15 +1,16 @@
-apiVersion: v1
-kind: Pod
+#when you run the command it will apply this file. yaml file execute top to bottom and left to right. 
+apiVersion: v1 #this is invoke the api
+kind: Pod #name of the api Pod
 metadata:
-  name: static-web
+  name: deliverapp #the name of the pod we are giving using metdata
   labels:
     app: mynginx
 
-spec:
-  containers:
+spec: #specification iniside the pod what you want to do 
+  containers: #we want to create a container
     - name: web
-      image: nginx
+      image: nginx #image which is going be created inside your pod
       ports:
         - name: web
-          containerPort: 80
+          containerPort: 80 #this is port in which your pod is running internally. 
           
