@@ -31,7 +31,7 @@ spec:
       volumes:
         - name: mysql-persistent-volume
           persistentVolumeClaim:
-            claimName: task-pv-claim
+            claimName: task-pv-volume
         - name: usermanagement-db-creation-script
           configMap:
             name: usermanagement-db-creation-script
