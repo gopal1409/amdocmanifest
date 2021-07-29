@@ -25,7 +25,7 @@ spec:
           - name: DB_HOSTNAME
             value: "mysql"
           - name: DB_PORT
-            value: 3306
+            value: "3306"
           - name: DB_NAME
             value: "webappdb"
           - name: DB_USERNAME
