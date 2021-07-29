@@ -23,9 +23,9 @@ spec:
                 key: db-password
         ports:
           - containerPort: 3306
-        volumeMounts:
-          - name: mysql-persistent-volume
-            mountPath: /var/lib/mysql
+        volumeMounts: #this is inside your container
+          - name: mysql-persistent-volume #i am capturing the volume of mysql container
+            mountPath: /var/lib/mysql #this is inisde your pod
           - name: usermanagement-db-creation-script
             mountPath: /docker-entrypoint-initdb.d
       volumes:
