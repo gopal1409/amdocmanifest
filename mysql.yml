@@ -23,7 +23,7 @@ spec:
                 key: db-password
         ports:
           - containerPort: 3306
-        volumeMount:
+        volumeMounts:
           - name: mysql-persistent-volume
             mountPath: /var/lib/mysql
           - name: usermanagement-db-creation-script
