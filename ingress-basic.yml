@@ -13,8 +13,9 @@ spec:
     metadata:
       labels:
         app: app1-nginx
-    containers:
-      - name: app1-nginx
-        image: stacksimplify/kube-nginxapp:1.0.0
-        ports:
-          - containerPort: 80
+    spec:
+      containers:
+        - name: app1-nginx
+          image: stacksimplify/kube-nginxapp:1.0.0
+          ports:
+            - containerPort: 80
