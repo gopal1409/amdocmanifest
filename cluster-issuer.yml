@@ -8,6 +8,6 @@ spec:
     privatekeySecretRef:
       name: letsencrypt
     solvers:
-      - http01
+      - http01:
           ingress:
             class: nginx
