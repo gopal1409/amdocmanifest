@@ -9,7 +9,5 @@ spec:
       - path: /
         pathType: Prefix
         backend:
-          service: app1-nginx-clusterip-service
-            name: test
-            port:
-              number: 80
+          serviceName: app1-nginx-clusterip-service
+          servicePort: 80
