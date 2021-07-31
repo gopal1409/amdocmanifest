@@ -5,7 +5,7 @@ metadata:
 spec:
   acme:
     server: https://acme-v02.api.letsencrypt.org/directory
-    privatekeySecretRef:
+    privateKeySecretRef:
       name: letsencrypt
     solvers:
       - http01:
