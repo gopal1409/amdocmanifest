@@ -10,4 +10,5 @@ spec:
         pathType: Prefix
         backend:
           serviceName: app1-nginx-clusterip-service
-          servicePort: 80
+          port:
+              number: 80
